@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form submit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <section>
+            <div id="container">
+                <div id="name" class="common">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="input-text1" placeholder="Enter name">
+                    <button onclick="addName()">Send Name</button>
+                    <button onclick="removeName()">Delete Name</button>
+                </div>
+                <div id="email" class="common">
+                    <label for="name">Email</label><br>
+                    <input type="email" id="input-text2" placeholder="Enter email">
+                    <button onclick="addEmail()">Send Email</button>
+                    <button onclick="removeEmail()">Delete Email</button>
+                </div>
+                <div id="message" class="common">
+                    <label for="message">Message</label><br>
+                    <input type="text" id="input-text3" class="mgs" placeholder="Enter message">
+                    <button onclick="addMessage()">Send Message</button>
+                    <button onclick="removeMessage()">Delete Message</button>
+                </div>
+                <div class="all-btn">
+                    <button class="send" onclick="sendAllData()">Send</button>
+                    <button class="reset" onclick="removeAllData()">Reset</button>
+                </div>
+            </div>
+        </section>
+
+    <script src="form.js"></script>
+</body>
+</html>
